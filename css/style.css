@@ -1,0 +1,198 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff7f0; /* fundo claro e aconchegante */
+    margin: 0;
+    padding: 0;
+    color: #4b3f2f; /* marrom escuro */
+}
+
+header {
+    background: #ff7f50; /* laranja vibrante */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #a64d2a;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* ===== Títulos ===== */
+h1, h2 {
+    color: #4b3f2f;
+    margin-bottom: 15px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: #6aa84f; /* verde alegre */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffdc9a; /* amarelo claro */
+    transform: scale(1.1);
+}
+
+/* ===== Tabela ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table th {
+    background: #ff7f50;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+    background: #fff0e5;
+}
+
+.table tr:hover {
+    background: #ffe0cc;
+}
+
+/* ===== Botões ===== */
+a.btn, button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 5px 2px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    border: none;
+}
+
+a.btn {
+    background: #ff9a76;
+    color: #fff;
+}
+
+a.btn:hover {
+    background: #ff7f50;
+}
+
+button {
+    background: #6aa84f;
+    color: #fff;
+}
+
+button:hover {
+    background: #558b2f;
+}
+
+/* ===== Formulário ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 2px solid #ffd2a6;
+    border-radius: 12px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #ff7f50;
+}
+
+/* ===== Rodapé ===== */
+footer {
+    background: #4b3f2f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* ===== Extras: ícones e decoração ===== */
+.pet-icon {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 450px; /* altura fixa para evitar “pular” */
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* transição suave */
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,127,80,0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5em;
+  transition: background 0.3s;
+  z-index: 3;
+}
+
+.carousel-container button:hover {
+  background: #ff7f50;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
